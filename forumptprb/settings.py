@@ -123,6 +123,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = '/home/herdissam/forumptprb-develop'
+
 # if we login we redirect to this link
 LOGIN_REDIRECT_URL = '/profile/'
 
