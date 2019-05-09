@@ -1,0 +1,90 @@
+{% extends 'base.html'%}
+
+{% block head%}
+<title>Profile</title>
+{% endblock%}
+
+{% block body%}
+<div class="container" style="padding-top:75px;">
+    <h1>Profile</h1>
+    <table class="table">
+        <tbody>
+            <tr>
+                <th scope="row">Username :</th>
+                <td>{{user}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Nama Penganggung Jawab :</th>
+                <td>{{user.first_name}} {{user.last_name}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Nomor Telepon CP : </th>
+                <td>{{user.userprofile.contact_person}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Email :</th>
+                <td>{{user.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div style="padding-top:20; padding-bottom: 20px">
+            <h2>Organisasi</h2>
+    </div>
+    
+    <table class="table">
+        <tbody>
+            <tr>
+                <th scope="row">Nama Lembaga/Organisasi :<th>
+                <td>{{user.userprofile.org_name}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Ketua :<th>
+                <td>{{user.userprofile.head}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Sekretaris :<th>
+                <td>{{user.userprofile.secretary}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Alamat :<th>
+                <td>{{user.userprofile.address}}</td>
+            </tr>
+            <tr>
+                <th scope="row">No. Telepon Organisasi :<th>
+                <td>{{user.userprofile.phone}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Fax :<th>
+                <td>{{user.userprofile.fax}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Email Organisasi :<th>
+                <td>{{user.userprofile.org_email}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Website:<th>
+                <td>{{user.userprofile.website}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Tugas Pokok Lembaga / Organisasi :<th>
+                <td>{{user.userprofile.description}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Kegiatan-kegiatan yang telah dan akan dilakukan :<th>
+                <td>{{user.userprofile.description2}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <div class="container" style="padding-top:20px;">
+        <a class="btn btn-primary" href="/profile/edit" role="button">Edit</a>
+        <a class="btn btn-danger" href="/logout/" role="button">Keluar</a>
+    </div>
+
+   <div style="padding-bottom:75px;">
+
+   </div>
+   
+</div>
+{% endblock%}

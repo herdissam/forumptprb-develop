@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+{% load crispy_forms_tags %}
+
+
+{% block head%}
+<title>Masuk</title>
+{% endblock%}
+
+
+{% block body%}
+<div class="container" style="padding-top:75px;">
+    <h2>Masuk</h2>
+    <form method="post">
+        {% csrf_token %}
+         {{ form|crispy}}
+        <button class="btn btn-primary" type="submit">Masuk</button>
+    </form>
+
+</div>
+{% endblock%}

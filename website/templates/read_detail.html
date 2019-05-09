@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>{{title}}</title>
+{% endblock %}
+
+
+{% block body %}
+    <div class ="container" style="padding-top:70px;"></div>
+
+    <div class="container">
+        
+            <h1 style="text-align:center; font-weight: bold; margin-bottom: 40px;">{{title}}</h1>
+
+            
+            <div style="display:block; margin-left:auto; margin-right:auto; width: 100%; max-width: 600px; height: auto;">
+                <img class="img-fluid" src="{{ instance.image.url }}" alt="">
+            </div>
+            
+            <hr>
+        
+            <div style="text-align: justify;">
+                {{ instance.content | linebreaks}}<br/>
+            </div>
+            <!-- {{ instance.timestamp}}<br/>
+            {{ instance.updated}}<br/>
+            {{ instance.id}}<br/> -->
+        
+    </div>  
+
+{% endblock %}

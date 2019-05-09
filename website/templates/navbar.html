@@ -1,0 +1,91 @@
+<section id="navbar">
+    <nav class="nav navbar navbar-expand-lg navbar-dark fixed-top">
+    
+    <div class="container">
+        {% load static %}
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Tentang
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/tentang/">Tentang Kami</a>
+                          <a class="dropdown-item" href="/tentang/">Visi dan Misi</a>
+                          <a class="dropdown-item" href="/tentang/">Struktur Organisasi</a>
+                        </div>
+                    </li> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Program
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/tentang/">Program TATTS 2015-2016</a>
+                          <a class="dropdown-item" href="#">Program TATTS 2016-2017 </a>
+                          <a class="dropdown-item" href="#">Program TATTS 2017-2018</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Riset dan Publikasi
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/riset/">Riset</a>
+                            <a class="dropdown-item" href="/prosiding/">Prosiding</a>
+                            <a class="dropdown-item" href="/prosiding/">E-book</a>
+                            <a class="dropdown-item" href="/bukukkn/">Buku Panduan</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Provinsi
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="/post/sumbar/">Sumatera Barat</a>
+                          <a class="dropdown-item" href="/post/jateng/">Jawa Tengah</a>
+                          <a class="dropdown-item" href="/jawatimur/">Jawa Timur</a>
+                          <a class="dropdown-item" href="#">Sulawesi Tenggara</a>
+                          <a class="dropdown-item" href="#">Maluku</a>
+                          <a class="dropdown-item" href="#">Maluku Utara</a>
+                          <a class="dropdown-item" href="#">Papua Barat</a>
+                          <a class="dropdown-item" href="#">Papua</a>
+                        </div>
+                    </li>   
+                </ul>
+
+                           
+                {% if user.is_authenticated %}
+                <li class="navbar-nav mr-2 my-md-0">
+                    <a class="nav-link" href="/profile/">{{user}}</a>
+                </li>
+
+                <li class="navbar-nav mr-2 my-md-0">
+                    <a class="nav-link" href="/logout/">Keluar</a>
+                </li>
+
+                {% else %}
+
+                <li class="navbar-nav mr-2 my-md-0">
+                    <a class="nav-link" href="/login/">Masuk</a>
+                </li>
+
+                <li class="navbar-nav mr-2 my-md-0">
+                    <a class="nav-link" href="/daftar/">Daftar</a>
+                </li>
+
+                {% endif %}
+            
+       
+            </div>
+        </div>
+    </nav>
+</section>
+    
+    
