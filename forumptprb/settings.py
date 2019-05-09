@@ -25,7 +25,7 @@ SECRET_KEY = 'v4lq!e0@h3uy_*7uxbym=1cyciaf)9&a#644#274q-i&^kivn^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.forumptprb.or.id']
 
 
 # Application definition
