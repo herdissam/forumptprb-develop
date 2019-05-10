@@ -123,7 +123,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = '/home/herdissam/forumptprb-develop'
+STATIC_ROOT = '/home/herdissam/forumptprb-develop/static'
 
 # if we login we redirect to this link
 LOGIN_REDIRECT_URL = '/profile/'
@@ -133,7 +133,7 @@ LOGIN_URL = '/login/'
 LOGIN_EXEMPT_URLS = (
     r'^logout/$',
     r'^register/$'
-) 
+)
 
 # cripsy form
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
