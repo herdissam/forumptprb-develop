@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+
+body {
+background: white;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+.contentContainer {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.upgradeButton {
+  font-size: 40px;
+  padding: 30px;
+  line-height: 0px;
+}
+
+.mainTitle {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.profileImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+}
+
+.articleTitle {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.articleImage {
+  width: 100%;
+}
+
+.authorArticleImage {
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+.underlineText {
+  text-decoration: underline;
+}
+
+.articleContent {
+  text-align: left;
+  font-size: 20px;
+}
+
+.themesContainer {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.themes {
+  font-size: 15px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+}
+
+.themes:active {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  .themesContainer {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+}
+
+@media (min-width: 1024px) {
+  .themesContainer {
+  margin-left: 600px;
+  margin-right: 600px;
+}
+}
