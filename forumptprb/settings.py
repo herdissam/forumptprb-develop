@@ -143,6 +143,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 STATIC_ROOT = '/home/herdissam/forumptprb2/static'
 
 MEDIA_URL = "/media/"
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media_cdn")
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "/media_cdn/")
 
 
