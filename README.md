@@ -1,7 +1,7 @@
 # forumptprb-develop
 Website for FPTPRB
 
-development of forumptprb using Django
+Development of forumptprb website using Django
 
 features:
 1. user registration
